@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  bin-wrapper: npm:bin-wrapper-china
+
 devDependencies:
   '@commitlint/cli':
     specifier: ^19.1.0
@@ -11,12 +14,24 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^19.1.0
     version: 19.1.0
+  '@dcloudio/types':
+    specifier: ^3.4.8
+    version: 3.4.8
+  '@types/wechat-miniprogram':
+    specifier: ^3.4.7
+    version: 3.4.7
   '@typescript-eslint/eslint-plugin':
     specifier: ^7.2.0
     version: 7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.2)
   '@typescript-eslint/parser':
     specifier: ^7.2.0
     version: 7.2.0(eslint@8.57.0)(typescript@5.4.2)
+  '@uni-helper/uni-app-types':
+    specifier: ^0.5.12
+    version: 0.5.12(typescript@5.4.2)
+  '@uni-helper/uni-ui-types':
+    specifier: ^0.5.12
+    version: 0.5.12(@uni-helper/uni-app-types@0.5.12)(typescript@5.4.2)
   commitlint:
     specifier: ^19.1.0
     version: 19.1.0(@types/node@20.11.27)(typescript@5.4.2)
@@ -328,6 +343,10 @@ packages:
       postcss-selector-parser: 6.0.16
     dev: true
 
+  /@dcloudio/types@3.4.8:
+    resolution: {integrity: sha512-IPXuoghLv7qNPOnRuP7vC5++MdRHhE0U7EMw9ia//uOh69fFXZiRTfoHd51+nzciD6R50gqYhbrCCZIxnxhM9Q==}
+    dev: true
+
   /@eslint-community/eslint-utils@4.4.0(eslint@8.57.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -437,6 +456,10 @@ packages:
 
   /@types/semver@7.5.8:
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
+    dev: true
+
+  /@types/wechat-miniprogram@3.4.7:
+    resolution: {integrity: sha512-X6SVOOaTPQN24lYBSV5jLuWyIedx8DGJnT0VUBnoNzJruhxotCL28ecGb7AO5JfXOXtHqSS5+CnJ70NxFxmisA==}
     dev: true
 
   /@typescript-eslint/eslint-plugin@7.2.0(@typescript-eslint/parser@7.2.0)(eslint@8.57.0)(typescript@5.4.2):
@@ -573,6 +596,33 @@ packages:
 
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+    dev: true
+
+  /@uni-helper/uni-app-types@0.5.12(typescript@5.4.2):
+    resolution: {integrity: sha512-SeUEgDgGftI4XEp1AB3C6IFLnRPT83tgTCCmlLUBmQyHh+UhRY+CX4QtgQ0n/kF8txNUq8Bc9YwKlYdXQGx6Ww==}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      typescript: ^4.8.0 || ^5.0.0
+    dependencies:
+      '@dcloudio/types': 3.4.8
+      typescript: 5.4.2
+      vue3: /vue@3.4.21(typescript@5.4.2)
+    dev: true
+
+  /@uni-helper/uni-ui-types@0.5.12(@uni-helper/uni-app-types@0.5.12)(typescript@5.4.2):
+    resolution: {integrity: sha512-rqmL35V8IXEYfNx7KIx6xFitzcyAxiv4RCErKN0R4W8nJc3UWQY6J2k3wR8JfV1smJAU123e6PnJxFGj8bfJhw==}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      '@uni-helper/uni-app-types': ^0.5.1
+    peerDependenciesMeta:
+      '@uni-helper/uni-app-types':
+        optional: true
+    dependencies:
+      '@dcloudio/types': 3.4.8
+      '@uni-helper/uni-app-types': 0.5.12(typescript@5.4.2)
+      vue3: /vue@3.4.21(typescript@5.4.2)
+    transitivePeerDependencies:
+      - typescript
     dev: true
 
   /@vue/compiler-core@3.4.21:

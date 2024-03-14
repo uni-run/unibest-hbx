@@ -43,8 +43,12 @@
   "devDependencies": {
     "@commitlint/cli": "^19.1.0",
     "@commitlint/config-conventional": "^19.1.0",
+    "@dcloudio/types": "^3.4.8",
+    "@types/wechat-miniprogram": "^3.4.7",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
+    "@uni-helper/uni-app-types": "^0.5.12",
+    "@uni-helper/uni-ui-types": "^0.5.12",
     "commitlint": "^19.1.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
