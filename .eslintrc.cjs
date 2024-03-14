@@ -47,12 +47,6 @@ module.exports = {
     'prettier/prettier': 'error',
     // turn on errors for missing imports
     'import/no-unresolved': 'off',
-    // 对后缀的检测，否则 import 一个ts文件也会报错，需要手动添加'.ts', 增加了下面的配置后就不用了
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
-    ],
     // 只允许1个默认导出，关闭，否则不能随意export xxx
     'import/prefer-default-export': ['off'],
     'no-console': ['off'],
@@ -67,6 +61,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-use-before-define': 'off',
     'no-undef': 'off',
+    'import/extensions': 'off',
   },
   // eslint-import-resolver-typescript 插件，@see https://www.npmjs.com/package/eslint-import-resolver-typescript
   settings: {

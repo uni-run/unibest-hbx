@@ -6,6 +6,12 @@
       "style": {
         "navigationBarTitleText": "uni-app"
       }
+    },
+    {
+      "path": "pages/index/pinia",
+      "style": {
+        "navigationBarTitleText": "pinia"
+      }
     }
   ],
   "globalStyle": {
