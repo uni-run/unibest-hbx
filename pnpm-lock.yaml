@@ -25,6 +25,9 @@ devDependencies:
   '@dcloudio/types':
     specifier: ^3.4.8
     version: 3.4.8
+  '@types/node':
+    specifier: ^20.11.27
+    version: 20.11.27
   '@types/wechat-miniprogram':
     specifier: ^3.4.7
     version: 3.4.7
@@ -100,6 +103,9 @@ devDependencies:
   stylelint-config-standard-scss:
     specifier: ^13.0.0
     version: 13.0.0(postcss@8.4.35)(stylelint@16.2.1)
+  unocss-applet:
+    specifier: ^0.7.8
+    version: 0.7.8
   vue-global-api:
     specifier: ^0.4.1
     version: 0.4.1(vue@3.4.21)
@@ -626,6 +632,68 @@ packages:
       vue3: /vue@3.4.21(typescript@5.4.2)
     transitivePeerDependencies:
       - typescript
+    dev: true
+
+  /@unocss-applet/preset-applet@0.7.8:
+    resolution: {integrity: sha512-KWzYD88eRf7hMa0SZv8X19eT1X1fwkInM47cjNZ36i/2brt77DSnZF3y61F1zxzdf28SRH/wzgkm2e0I7JepCQ==}
+    dependencies:
+      '@unocss/core': 0.56.5
+      '@unocss/preset-mini': 0.56.5
+      '@unocss/preset-uno': 0.56.5
+    dev: true
+
+  /@unocss-applet/preset-rem-rpx@0.7.8:
+    resolution: {integrity: sha512-H+7CbzfNOglGlTW0qurlpfPdSsaLkxwG4qSyxufaMCX6T26Mss6Xy9ENIaGps1m0Sk4NXJYO01h9yWGzaeCZXg==}
+    dev: true
+
+  /@unocss-applet/transformer-applet@0.5.5:
+    resolution: {integrity: sha512-GDzZt0S+Jbr7yiD+cmkIQdnEroAzSiCPajXaTWbmkk8dio+7dW9cWPEGaFKa3laJI6yxDR3jJX44m82LhHdEpg==}
+    dev: true
+
+  /@unocss-applet/transformer-attributify@0.7.8:
+    resolution: {integrity: sha512-YiBe5wFMEDdAuIwXPBFs6nA7i1Igskx1oLIl/xHXb6jEBqWGqTj1P/nx0XsrS0hu1YW7T7JsTCtSoLAdPmAPuA==}
+    dev: true
+
+  /@unocss/core@0.56.5:
+    resolution: {integrity: sha512-fx5VhOjSHn0HdV2D34pEwFMAHJcJQRTCp1xEE4GzxY1irXzaa+m2aYf5PZjmDxehiOC16IH7TO9FOWANXk1E0w==}
+    dev: true
+
+  /@unocss/extractor-arbitrary-variants@0.56.5:
+    resolution: {integrity: sha512-p2pyzz/ONvc5CGcaB9OZvWE8qkRSgyuhaQqFQLdBFeUhveHC0CGP0iSnXwBgAFHWM7DJo4/JpWeZ+mBt0ogVLA==}
+    dependencies:
+      '@unocss/core': 0.56.5
+    dev: true
+
+  /@unocss/preset-mini@0.56.5:
+    resolution: {integrity: sha512-/KhlThhs1ilauM7MwRSpahLbIPZ5VGeGvaUsU8+ZlNT3sis4yoVYkPtR14tL2IT6jhOU05N/uu3aBj+1bP8GjQ==}
+    dependencies:
+      '@unocss/core': 0.56.5
+      '@unocss/extractor-arbitrary-variants': 0.56.5
+      '@unocss/rule-utils': 0.56.5
+    dev: true
+
+  /@unocss/preset-uno@0.56.5:
+    resolution: {integrity: sha512-3hzE0X1oxMbHLvWyTj/4BrJQ7OAL428BpzEJos0RsxifM04vOJX4GC4khIbmTl8KIMECMtATK3ren3JqzD2bFw==}
+    dependencies:
+      '@unocss/core': 0.56.5
+      '@unocss/preset-mini': 0.56.5
+      '@unocss/preset-wind': 0.56.5
+      '@unocss/rule-utils': 0.56.5
+    dev: true
+
+  /@unocss/preset-wind@0.56.5:
+    resolution: {integrity: sha512-iyMPvCEZkrGLHFXXlcqxDo/UcSK7KWw4x7/QUz7irrvc78cxYVuPm98QZgpCRcCwKerKVyFLjGOtwQ0kmVSVsQ==}
+    dependencies:
+      '@unocss/core': 0.56.5
+      '@unocss/preset-mini': 0.56.5
+      '@unocss/rule-utils': 0.56.5
+    dev: true
+
+  /@unocss/rule-utils@0.56.5:
+    resolution: {integrity: sha512-CXIGHCIC9B8WUl9KbbFMSZHcsIgfmI/+X0bjBv6xrgBVC1EQ2Acq4PYnJIbaRGBRAhl9wYjNL7Zq2UWOdowHAw==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.56.5
     dev: true
 
   /@vue/compiler-core@3.4.21:
@@ -3487,6 +3555,16 @@ packages:
   /unicorn-magic@0.1.0:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
     engines: {node: '>=18'}
+    dev: true
+
+  /unocss-applet@0.7.8:
+    resolution: {integrity: sha512-wseTfy7nU8kjTOxdF6iJGiFCHOmaSwdSba8J2XAsb3jhuchVrb/7/iey7Z2ph6W0Qf3k2Tm0d1au9AfiPj5E3Q==}
+    dependencies:
+      '@unocss-applet/preset-applet': 0.7.8
+      '@unocss-applet/preset-rem-rpx': 0.7.8
+      '@unocss-applet/transformer-applet': 0.5.5
+      '@unocss-applet/transformer-attributify': 0.7.8
+      '@unocss/preset-uno': 0.56.5
     dev: true
 
   /uri-js@4.4.1:

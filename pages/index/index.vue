@@ -4,7 +4,7 @@
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
-    <button type="primary" @click="gotoPinia">pinia 页面</button>
+    <button type="primary" @click="gotoPinia" class="mt-4">pinia 页面</button>
   </view>
 </template>
 
