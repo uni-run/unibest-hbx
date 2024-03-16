@@ -1,5 +1,6 @@
 import path from 'node:path'
 import { defineConfig, loadEnv } from 'vite'
+import vue from '@vitejs/plugin-vue'
 // @see https://unocss.dev/
 import UnoCSS from 'unocss/vite'
 
@@ -21,8 +22,8 @@ export default ({ command, mode }) => {
   console.log(process.env.UNI_PLATFORM) // 得到 mp-weixin, h5 等
 
   return defineConfig({
-    envDir: './env', // 自定义env目录
-    plugins: [UnoCSS()],
+    // envDir: './env', // 自定义env目录
+    plugins: [vue(), UnoCSS()],
 
     css: {
       postcss: {
@@ -43,16 +44,7 @@ export default ({ command, mode }) => {
     server: {
       host: '0.0.0.0',
       hmr: true,
-      port: Number.parseInt(env.VITE_APP_PORT, 10),
-    },
-    build: {
-      minify: 'terser',
-      terserOptions: {
-        compress: {
-          drop_console: env.VITE_DELETE_CONSOLE === 'true',
-          drop_debugger: env.VITE_DELETE_CONSOLE === 'true',
-        },
-      },
+      port: 9900,
     },
   })
 }

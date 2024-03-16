@@ -50,6 +50,7 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@uni-helper/uni-app-types": "^0.5.12",
     "@uni-helper/uni-ui-types": "^0.5.12",
+    "@vitejs/plugin-vue": "^5.0.4",
     "commitlint": "^19.1.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -70,11 +71,13 @@
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.0.0",
+    "unocss": "^0.58.6",
     "unocss-applet": "^0.7.8",
     "vue-global-api": "^0.4.1"
   },
   "dependencies": {
-    "pinia": "^2.1.7",
-    "pinia-plugin-persistedstate": "^3.2.1"
+    "pinia": "2.0.36",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "vue": "3.2.47"
   }
 }
