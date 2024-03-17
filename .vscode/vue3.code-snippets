@@ -19,14 +19,6 @@
     "scope": "vue",
     "prefix": "v3",
     "body": [
-      "<route lang=\"json5\" type=\"page\">",
-      "{",
-      "  layout: 'default',",
-      "  style: {",
-      "    navigationBarTitleText: '$1',"
-      "  },",
-      "}",
-      "</route>\n",
       "<template>",
       "  <view class=\"\">$2</view>",
       "</template>\n",
