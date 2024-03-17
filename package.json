@@ -51,6 +51,10 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@uni-helper/uni-app-types": "^0.5.12",
     "@uni-helper/uni-ui-types": "^0.5.12",
+    "@uni-helper/vite-plugin-uni-layouts": "^0.1.7",
+    "@uni-helper/vite-plugin-uni-manifest": "^0.2.3",
+    "@uni-helper/vite-plugin-uni-pages": "^0.2.15",
+    "@uni-helper/vite-plugin-uni-platform": "^0.0.4",
     "@vitejs/plugin-vue": "^5.0.4",
     "commitlint": "^19.1.0",
     "eslint": "^8.57.0",
@@ -74,9 +78,14 @@
     "stylelint-config-standard-scss": "^13.0.0",
     "unocss": "^0.58.6",
     "unocss-applet": "^0.7.8",
+    "vite-plugin-restart": "^0.4.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vite-svg-loader": "^5.1.0",
     "vue-global-api": "^0.4.1"
   },
   "dependencies": {
+    "dayjs": "^1.11.10",
     "pinia": "2.0.36",
     "pinia-plugin-persistedstate": "^3.2.1",
     "vue": "3.2.47"
