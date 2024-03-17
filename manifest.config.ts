@@ -1,25 +1,18 @@
 // manifest.config.ts
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
-// import path from 'node:path'
-// import { loadEnv } from 'vite'
+import path from 'node:path'
+import { loadEnv } from 'vite'
 
 // 获取环境变量的范例
-// const env = loadEnv(process.env.NODE_ENV!, path.resolve(process.cwd(), 'env'))
-// console.log(env)
+const env = loadEnv(process.env.NODE_ENV!, path.resolve(process.cwd(), 'env'))
+console.log(env)
 const {
   VITE_APP_TITLE,
   VITE_UNI_APPID,
   VITE_WX_APPID,
   VITE_APP_PUBLIC_BASE,
   VITE_FALLBACK_LOCALE,
-} = {
-  VITE_APP_TITLE: 'unibest-hbx',
-  VITE_UNI_APPID: '1000000000000000',
-  VITE_WX_APPID: '1000000000000000',
-  VITE_APP_PUBLIC_BASE: '/',
-  VITE_FALLBACK_LOCALE: 'zh-Hans',
-}
-
+} = env
 export default defineManifestConfig({
   name: VITE_APP_TITLE,
   appid: VITE_UNI_APPID,
