@@ -4,7 +4,8 @@
     <view class="text-area">
       <text class="title">{{ title }}</text>
     </view>
-    <button type="primary" @click="gotoPinia" class="mt-4">pinia 页面</button>
+    <button type="primary" @click="gotoPage('pinia')" class="mt-4">pinia 页面</button>
+    <button type="primary" @click="gotoPage('unocss')" class="mt-4">pinia 页面</button>
   </view>
 </template>
 
@@ -13,9 +14,9 @@ import { ref } from 'vue'
 
 const title = ref('Hello')
 
-const gotoPinia = () => {
+const gotoPage = (path: string) => {
   wx.navigateTo({
-    url: '/pages/index/pinia',
+    url: `/pages/demo/${path}`,
   })
 }
 </script>

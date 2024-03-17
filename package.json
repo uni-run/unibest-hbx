@@ -45,6 +45,7 @@
     "@commitlint/cli": "^19.1.0",
     "@commitlint/config-conventional": "^19.1.0",
     "@dcloudio/types": "^3.4.8",
+    "@iconify-json/carbon": "^1.1.31",
     "@types/node": "^20.11.27",
     "@types/wechat-miniprogram": "^3.4.7",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

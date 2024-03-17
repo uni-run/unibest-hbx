@@ -28,6 +28,9 @@ devDependencies:
   '@dcloudio/types':
     specifier: ^3.4.8
     version: 3.4.8
+  '@iconify-json/carbon':
+    specifier: ^1.1.31
+    version: 1.1.31
   '@types/node':
     specifier: ^20.11.27
     version: 20.11.27
@@ -916,6 +919,12 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    dev: true
+
+  /@iconify-json/carbon@1.1.31:
+    resolution: {integrity: sha512-CAvECFfiwGyZmlcuM2JLMRDEN3VsIEZv6lml7Xf+3giQ5oXloADm0b5wiVPFZmONKM5jXERmx+E7YSvAtFJIbw==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types@2.0.0:

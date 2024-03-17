@@ -8,9 +8,16 @@
       }
     },
     {
-      "path": "pages/index/pinia",
+      "path": "pages/demo/pinia",
       "style": {
         "navigationBarTitleText": "pinia"
+      }
+    },
+    {
+      "path": "pages/demo/unocss",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
       }
     }
   ],
