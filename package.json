@@ -23,7 +23,7 @@
     "pnpm": ">=7.30"
   },
   "scripts": {
-    "prepare": "husky"
+    "prepare": "node ./shell/postinstall.js & git init && husky install"
   },
   "lint-staged": {
     "**/*.{html,vue,ts,cjs,json,md}": [
