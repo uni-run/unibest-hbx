@@ -24,6 +24,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "vite": "vite -c v.config.ts",
     "unocss": "unocss ./pages/**/*.vue ./components/**/*.vue -c unocss.config.js --watch -o unocss.css",
     "prepare": "husky"
   },
