@@ -24,6 +24,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "unocss": "unocss ./pages/**/*.vue ./components/**/*.vue -c unocss.config.js --watch -o unocss.css",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -34,7 +35,7 @@
       "eslint --fix"
     ],
     "**/*.{vue,css,scss,html}": [
-      "stylelint --fix"
+      "stylelint --fix --allow-empty-input"
     ]
   },
   "resolutions": {
