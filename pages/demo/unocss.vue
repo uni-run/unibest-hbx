@@ -1,5 +1,5 @@
 <template>
-  <view>
+  <view class="text-center p-4">
     <view class="mb-2">
       这里只装了carbon的图表库，网址：
       <a href="https://icones.js.org/collection/carbon" target="_blank"
@@ -9,5 +9,6 @@
     <view class="i-carbon-car" />
     <view class="i-carbon-car text-red" />
     <button class="i-carbon-sun dark:i-carbon-moon" />
+    <view class="i-carbon-user-avatar text-red" />
   </view>
 </template>

@@ -5,7 +5,7 @@
       <text class="title">{{ title }}</text>
     </view>
     <button type="primary" @click="gotoPage('pinia')" class="mt-4">pinia 页面</button>
-    <button type="primary" @click="gotoPage('unocss')" class="mt-4">pinia 页面</button>
+    <button type="primary" @click="gotoPage('unocss')" class="mt-4">unocss 页面</button>
   </view>
 </template>
 
