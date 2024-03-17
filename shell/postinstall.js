@@ -19,3 +19,29 @@ if (fs.existsSync(filePath)) {
     // console.log(`${filePath}已经成功创建，并写入{}`)
   })
 }
+
+const filePath2 = './pages.json'
+if (fs.existsSync(filePath2)) {
+  // console.log(`${filePath}存在`)
+} else {
+  // console.log(`${filePath}不存在，需要创建`)
+  fs.writeFile(
+    filePath2,
+    `{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "type": "home",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "首页"
+      }
+    }
+  ]
+}\n`,
+    {},
+    () => {
+      // console.log(`${filePath}已经成功创建，并写入{}`)
+    },
+  )
+}

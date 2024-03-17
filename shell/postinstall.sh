@@ -6,5 +6,23 @@ if test -f ./manifest.json; then
   echo ./manifest.json 存在
 else
   touch ./manifest.json
-  echo "{"vueVersion": "3"}" >./manifest.json
+  echo '{ "vueVersion": "3" }' >./manifest.json
+fi
+
+if test -f ./pages.json; then
+  echo ./pages.json 存在
+else
+  touch ./pages.json
+  echo '{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "type": "home",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "首页"
+      }
+    }
+  ]
+}' >./pages.json
 fi
