@@ -42,3 +42,4 @@ manifest.json
 # mac系统，hbx 自带的文件在 /Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli-vite
 # 里面的vite版本为4.2.1，但是一安装就报错：✘ [ERROR] Cannot start service: Host version "0.17.19" does not match binary version "0.17.12"
 # 安装vite@5，运行更加报错，暂时还是不装vite吧，用uni自身的vite插件（不清楚是什么版本）
+# 参照unibest项目安装了vite@4.0.3总算不报错了
