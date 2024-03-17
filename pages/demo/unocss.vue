@@ -1,3 +1,11 @@
+<route lang="json5">
+{
+  style: {
+    navigationBarTitleText: 'unocss',
+  },
+}
+</route>
+
 <template>
   <view class="text-center p-4">
     <view class="mb-2">

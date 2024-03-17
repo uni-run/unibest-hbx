@@ -20,16 +20,23 @@
       "path": "pages/index/index",
       "type": "home",
       "style": {
-        "navigationBarTitleText": "@uni-helper"
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "首页"
       }
     },
     {
       "path": "pages/demo/pinia",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "pinia"
+      }
     },
     {
       "path": "pages/demo/unocss",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "unocss"
+      }
     }
   ],
   "subPackages": [
