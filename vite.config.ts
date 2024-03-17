@@ -10,7 +10,7 @@ import Uni from '@dcloudio/vite-plugin-uni'
 // 需要与 @uni-helper/vite-plugin-uni-pages 插件一起使用
 // import UniPlatform from '@uni-helper/vite-plugin-uni-platform'
 // @see https://github.com/uni-helper/vite-plugin-uni-manifest
-// import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
+import UniManifest from '@uni-helper/vite-plugin-uni-manifest'
 // @see https://unocss.dev/
 import UnoCSS from 'unocss/vite'
 // import autoprefixer from 'autoprefixer'
@@ -52,7 +52,7 @@ export default ({ command, mode }) => {
       // }),
       // UniLayouts(),
       // UniPlatform(),
-      // UniManifest(),
+      UniManifest(),
       // UniXXX 需要在 Uni 之前引入
       Uni(),
       UnoCSS(),
