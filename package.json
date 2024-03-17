@@ -46,6 +46,7 @@
     "@commitlint/cli": "^19.1.0",
     "@commitlint/config-conventional": "^19.1.0",
     "@dcloudio/types": "^3.4.8",
+    "@dcloudio/vite-plugin-uni": "3.0.0-3090920231225001",
     "@iconify-json/carbon": "^1.1.31",
     "@types/node": "^20.11.27",
     "@types/wechat-miniprogram": "^3.4.7",
