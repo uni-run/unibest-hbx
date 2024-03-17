@@ -15,7 +15,7 @@ if (fs.existsSync(filePath)) {
   // console.log(`${filePath}存在`)
 } else {
   // console.log(`${filePath}不存在，需要创建`)
-  fs.writeFile(filePath, '{}\n', {}, () => {
+  fs.writeFile(filePath, '{"vueVersion": "3"}\n', {}, () => {
     // console.log(`${filePath}已经成功创建，并写入{}`)
   })
 }

@@ -6,5 +6,5 @@ if test -f ./manifest.json; then
   echo ./manifest.json 存在
 else
   touch ./manifest.json
-  echo "{}" >./manifest.json
+  echo "{"vueVersion": "3"}" >./manifest.json
 fi
