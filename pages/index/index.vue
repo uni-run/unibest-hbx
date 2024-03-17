@@ -1,3 +1,9 @@
+<route type="home" lang="json">
+{
+  "style": { "navigationBarTitleText": "@uni-helper" }
+}
+</route>
+
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png"></image>

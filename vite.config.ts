@@ -3,7 +3,7 @@ import dayjs from 'dayjs'
 import { defineConfig, loadEnv } from 'vite'
 import Uni from '@dcloudio/vite-plugin-uni'
 // @see https://uni-helper.js.org/vite-plugin-uni-pages
-// import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import UniPages from '@uni-helper/vite-plugin-uni-pages'
 // @see https://uni-helper.js.org/vite-plugin-uni-layouts
 // import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 // @see https://github.com/uni-helper/vite-plugin-uni-platform
@@ -44,12 +44,15 @@ export default ({ command, mode }) => {
   return defineConfig({
     envDir: './env', // 自定义env目录
     plugins: [
-      // UniPages({
-      //   exclude: ['**/components/**/**.*', '**/my/**/**.vue'],
-      //   routeBlockLang: 'json5', // 虽然设了默认值，但是vue文件还是要加上 lang="json5", 这样才能很好地格式化
-      //   homePage: 'pages/index/index',
-      //   subPackages: ['src/pages-sub'], // 是个数组，可以配置多个
-      // }),
+      UniPages({
+        dts: false,
+        dir: './pages',
+        outDir: '.',
+        exclude: ['**/components/**/**.*', '**/my/**/**.vue'],
+        routeBlockLang: 'json5', // 虽然设了默认值，但是vue文件还是要加上 lang="json5", 这样才能很好地格式化
+        homePage: 'pages/index/index',
+        subPackages: ['src/pages-sub'], // 是个数组，可以配置多个
+      }),
       // UniLayouts(),
       // UniPlatform(),
       UniManifest(),
