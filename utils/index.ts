@@ -102,3 +102,9 @@ export const getNeedLoginPages = (): string[] => getAllPages('needLogin').map((p
  * 只得到 path 数组
  */
 export const needLoginPages: string[] = getAllPages('needLogin').map((page) => page.path)
+
+export const getArrElementByIdx = (arr: any[], index: number) => {
+  if (index < 0) return arr[arr.length + index]
+  if (index >= arr.length) return undefined
+  return arr[index]
+}
