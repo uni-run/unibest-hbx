@@ -24,8 +24,8 @@ dist
 .stylelintcache
 
 # 插件生成的文件
-pages.json
-manifest.json
+# pages.json
+# manifest.json
 
 # lock 文件还是不要了，我主要的版本写死就好了
 # github actions 需要这些文件，所以留着
