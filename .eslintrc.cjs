@@ -62,6 +62,9 @@ module.exports = {
     'no-use-before-define': 'off',
     'no-undef': 'off',
     'import/extensions': 'off',
+    'no-unused-vars': 'off',
+    'no-param-reassign': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   },
   // eslint-import-resolver-typescript 插件，@see https://www.npmjs.com/package/eslint-import-resolver-typescript
   settings: {
