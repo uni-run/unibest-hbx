@@ -8,12 +8,6 @@ overrides:
   bin-wrapper: npm:bin-wrapper-china
 
 dependencies:
-  '@climblee/uv-ui':
-    specifier: ^1.1.20
-    version: 1.1.20
-  '@dcloudio/uni-ui':
-    specifier: ^1.5.2
-    version: 1.5.2
   dayjs:
     specifier: ^1.11.10
     version: 1.11.10
@@ -26,6 +20,9 @@ dependencies:
   vue:
     specifier: 3.2.47
     version: 3.2.47
+  wot-design-uni:
+    specifier: ^1.2.5
+    version: 1.2.5(vue@3.2.47)
 
 devDependencies:
   '@commitlint/cli':
@@ -1450,10 +1447,6 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  /@climblee/uv-ui@1.1.20:
-    resolution: {integrity: sha512-jkyesHJsPJkF4Nap9ZmG1/ibKlxXA5M8+ntqKXwwloIsYSYL5SOKb0gyPj17aBOU1PkJpmeiZ8PwnTolhK2/HA==}
-    dev: false
-
   /@commitlint/cli@19.1.0(@types/node@20.11.27)(typescript@5.4.2):
     resolution: {integrity: sha512-SYGm8HGbVzrlSYeB6oo6pG1Ec6bOMJcDsXgNGa4vgZQsPj6nJkcbTWlIRmtmIk0tHi0d5sCljGuQ+g/0NCPv7w==}
     engines: {node: '>=v18'}
@@ -1714,10 +1707,6 @@ packages:
     dependencies:
       '@vue/shared': 3.2.47
     dev: true
-
-  /@dcloudio/uni-ui@1.5.2:
-    resolution: {integrity: sha512-/MO31TELyHcKt3nS5bo1t8lQmLSnP9EKlHcShjqM27gL0QeYtoc9UekOITRbA9zi8rnlII3Aw91DHtny3IodFg==}
-    dev: false
 
   /@dcloudio/vite-plugin-uni@3.0.0-3090920231225001(postcss@8.4.35)(vue@3.2.47):
     resolution: {integrity: sha512-kV/J7yl5ojsd1NZZ1eMziRDrz+MPbjDMm6rWG3fyW1u8Kzj06jUzzi7HRlkaWiPJHAmeRWGDf/6RFoSd+8fYCg==}
@@ -9054,6 +9043,15 @@ packages:
     dependencies:
       isexe: 2.0.0
     dev: true
+
+  /wot-design-uni@1.2.5(vue@3.2.47):
+    resolution: {integrity: sha512-tbDDUsrT7NI7Hd2DNY/EpmAD1jMTD9ejN0sTeXTexyrMLh4D9B617D+H3ssCtcb4Q1eElhshb/IFu1ESPZX9WQ==}
+    engines: {HBuilderX: ^3.8.7}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.47
+    dev: false
 
   /wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
