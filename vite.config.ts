@@ -112,5 +112,14 @@ export default ({ command, mode }) => {
       hmr: true,
       port: 9000,
     },
+    build: {
+      // 解决windows系统对微信小程序自动关闭服务的问题
+      watch:
+        process.platform === 'win32' // 检测是否为 windows 系统
+          ? {
+              exclude: ['node_modules/**', '/__uno.css'],
+            }
+          : null,
+    },
   })
 }
