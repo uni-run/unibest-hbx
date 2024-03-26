@@ -85,11 +85,10 @@
     "vue-global-api": "^0.4.1"
   },
   "dependencies": {
-    "@climblee/uv-ui": "^1.1.20",
-    "@dcloudio/uni-ui": "^1.5.2",
     "dayjs": "^1.11.10",
     "pinia": "2.0.36",
     "pinia-plugin-persistedstate": "^3.2.1",
-    "vue": "3.2.47"
+    "vue": "3.2.47",
+    "wot-design-uni": "^1.2.5"
   }
 }
