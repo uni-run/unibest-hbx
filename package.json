@@ -39,6 +39,13 @@
   "resolutions": {
     "bin-wrapper": "npm:bin-wrapper-china"
   },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "pinia": "2.0.36",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "vue": "3.2.47",
+    "wot-design-uni": "^1.2.5"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.1.0",
     "@commitlint/config-conventional": "^19.1.0",
@@ -83,12 +90,5 @@
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vite-svg-loader": "^5.1.0",
     "vue-global-api": "^0.4.1"
-  },
-  "dependencies": {
-    "dayjs": "^1.11.10",
-    "pinia": "2.0.36",
-    "pinia-plugin-persistedstate": "^3.2.1",
-    "vue": "3.2.47",
-    "wot-design-uni": "^1.2.5"
   }
 }
