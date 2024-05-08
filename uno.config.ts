@@ -39,6 +39,10 @@ export default defineConfig({
         display: 'inline-block',
         'vertical-align': 'middle',
       },
+      // 可以指定需要的图标集合
+      collections: {
+        carbon: () => import('@iconify-json/carbon').then((i) => i.icons as any),
+      },
     }),
     // 将颜色函数 (rgb()和hsl()) 从空格分隔转换为逗号分隔，更好的兼容性app端，example：
     // `rgb(255 0 0)` -> `rgb(255, 0, 0)`
