@@ -66,6 +66,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.16",
     "commitlint": "^19.3.0",
+    "esbuild": "0.20.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
@@ -91,7 +92,6 @@
     "unocss-applet": "^0.7.8",
     "unplugin-auto-import": "^0.17.2",
     "vite": "5.2.8",
-    "esbuild": "0.20.1",
     "vite-plugin-restart": "^0.4.0"
   }
 }
