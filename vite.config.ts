@@ -38,7 +38,7 @@ export default ({ command, mode }) => {
     envDir: './env', // 自定义env目录
     plugins: [
       UniPages({
-        dts: 'types/uni-pages.d.ts',
+        dts: path.join(VITE_ROOT_DIR, 'types/uni-pages.d.ts'),
         homePage: 'pages/index/index', // 设置默认路由入口
         dir: 'pages', // 主目录
         subPackages: ['pages-sub'], // 子目录，是个数组，可以配置多个，但是不能为pages里面的目录
