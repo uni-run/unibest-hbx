@@ -24,17 +24,15 @@ export default ({ command, mode }) => {
 
   // mode: 区分生产环境还是开发环境
   console.log('command, mode -> ', command, mode)
-  // pnpm dev:h5 时得到 => serve development
-  // pnpm build:h5 时得到 => build production
-  // pnpm dev:mp-weixin 时得到 => build development (注意区别，command为build)
-  // pnpm build:mp-weixin 时得到 => build production
+  // dev 和 build 命令可以分别使用 .env.development 和 .env.production 的环境变量
 
   // process.env.VITE_ROOT_DIR: 获取当前文件的目录跟地址
   // loadEnv(): 返回当前环境env文件中额外定义的变量
   const env = loadEnv(mode, path.resolve(process.env.VITE_ROOT_DIR, 'env'))
   const { VITE_ROOT_DIR, VITE_APP_PORT, VITE_DELETE_CONSOLE, VITE_SHOW_SOURCEMAP } = env
   console.log('环境变量 env -> ', env)
-  console.log('UNI_PLATFORM -> ', process.env.UNI_PLATFORM) // 得到 mp-weixin, h5 等
+  const { UNI_PLATFORM } = process.env
+  console.log('UNI_PLATFORM -> ', UNI_PLATFORM) // 得到 mp-weixin, h5, app 等
 
   return defineConfig({
     envDir: './env', // 自定义env目录
@@ -68,14 +66,16 @@ export default ({ command, mode }) => {
         restart: ['vite.config.js'],
       }),
       // h5环境增加编译时间
-      process.env.UNI_PLATFORM === 'h5' && {
+      UNI_PLATFORM === 'h5' && {
         name: 'html-transform',
         transformIndexHtml(html) {
           return html.replace('%BUILD_DATE%', dayjs().format('YYYY-MM-DD HH:mm:ss'))
         },
       },
     ],
-
+    define: {
+      __UNI_PLATFORM__: JSON.stringify(UNI_PLATFORM),
+    },
     css: {
       postcss: {
         plugins: [

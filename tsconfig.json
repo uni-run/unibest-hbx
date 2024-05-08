@@ -4,7 +4,10 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "noImplicitThis": true,
     "allowSyntheticDefaultImports": true,
+    "allowJs": true,
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
@@ -25,5 +28,14 @@
     "nativeTags": ["block", "template", "component", "slot"]
   },
   "exclude": ["node_modules"],
-  "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.tsx", "./**/*.vue", "./**/*.json", "main.js"]
+  "include": [
+    "./**/*.ts",
+    "./**/*.js",
+    "./**/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.jsx",
+    "./**/*.vue",
+    "./**/*.json",
+    "main.js"
+  ]
 }

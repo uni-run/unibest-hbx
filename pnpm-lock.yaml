@@ -20,6 +20,9 @@ importers:
       pinia-plugin-persistedstate:
         specifier: ^3.2.1
         version: 3.2.1(pinia@2.0.36(typescript@5.4.2)(vue@3.4.21(typescript@5.4.2)))
+      qs:
+        specifier: 6.5.3
+        version: 6.5.3
       vue:
         specifier: 3.4.21
         version: 3.4.21(typescript@5.4.2)
@@ -72,9 +75,15 @@ importers:
       '@uni-helper/vite-plugin-uni-platform':
         specifier: ^0.0.4
         version: 0.0.4
+      '@unocss/preset-legacy-compat':
+        specifier: ^0.59.1
+        version: 0.59.4
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
         version: 5.0.4(vite@5.2.8(@types/node@20.12.10)(sass@1.77.0)(terser@5.29.2))(vue@3.4.21(typescript@5.4.2))
+      autoprefixer:
+        specifier: ^10.4.16
+        version: 10.4.19(postcss@8.4.38)
       commitlint:
         specifier: ^19.3.0
         version: 19.3.0(@types/node@20.12.10)(typescript@5.4.2)
@@ -84,12 +93,12 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
-      eslint-config-airbnb-base:
-        specifier: ^15.0.0
-        version: 15.0.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))(eslint@8.57.0)
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.0)
+      eslint-config-standard:
+        specifier: ^17.1.0
+        version: 17.1.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))(eslint-plugin-n@16.6.2(eslint@8.57.0))(eslint-plugin-promise@6.1.1(eslint@8.57.0))(eslint@8.57.0)
       eslint-import-resolver-typescript:
         specifier: ^3.6.1
         version: 3.6.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.2))(eslint-plugin-import@2.29.1)(eslint@8.57.0)
@@ -129,30 +138,36 @@ importers:
       stylelint-config-recess-order:
         specifier: ^5.0.1
         version: 5.0.1(stylelint@16.5.0(typescript@5.4.2))
+      stylelint-config-recommended:
+        specifier: ^14.0.0
+        version: 14.0.0(stylelint@16.5.0(typescript@5.4.2))
+      stylelint-config-recommended-scss:
+        specifier: ^14.0.0
+        version: 14.0.0(postcss@8.4.38)(stylelint@16.5.0(typescript@5.4.2))
       stylelint-config-recommended-vue:
         specifier: ^1.5.0
         version: 1.5.0(postcss-html@1.6.0)(stylelint@16.5.0(typescript@5.4.2))
-      stylelint-config-standard:
-        specifier: ^36.0.0
-        version: 36.0.0(stylelint@16.5.0(typescript@5.4.2))
-      stylelint-config-standard-scss:
-        specifier: ^13.1.0
-        version: 13.1.0(postcss@8.4.38)(stylelint@16.5.0(typescript@5.4.2))
+      stylelint-prettier:
+        specifier: ^5.0.0
+        version: 5.0.0(prettier@3.2.5)(stylelint@16.5.0(typescript@5.4.2))
+      terser:
+        specifier: ^5.26.0
+        version: 5.29.2
       unocss:
         specifier: ^0.58.9
         version: 0.58.9(postcss@8.4.38)(rollup@4.17.2)(vite@5.2.8(@types/node@20.12.10)(sass@1.77.0)(terser@5.29.2))
       unocss-applet:
         specifier: ^0.7.8
         version: 0.7.8
+      unplugin-auto-import:
+        specifier: ^0.17.2
+        version: 0.17.5(rollup@4.17.2)
       vite:
         specifier: 5.2.8
         version: 5.2.8(@types/node@20.12.10)(sass@1.77.0)(terser@5.29.2)
       vite-plugin-restart:
         specifier: ^0.4.0
         version: 0.4.0(vite@5.2.8(@types/node@20.12.10)(sass@1.77.0)(terser@5.29.2))
-      vue-global-api:
-        specifier: ^0.4.1
-        version: 0.4.1(vue@3.4.21(typescript@5.4.2))
 
 packages:
 
@@ -1610,6 +1625,9 @@ packages:
   '@unocss/core@0.58.9':
     resolution: {integrity: sha512-wYpPIPPsOIbIoMIDuH8ihehJk5pAZmyFKXIYO/Kro98GEOFhz6lJoLsy6/PZuitlgp2/TSlubUuWGjHWvp5osw==}
 
+  '@unocss/core@0.59.4':
+    resolution: {integrity: sha512-bBZ1sgcAtezQVZ1BST9IS3jqcsTLyqKNjiIf7FTnX3DHpfpYuMDFzSOtmkZDzBleOLO/CtcRWjT0HwTSQAmV0A==}
+
   '@unocss/extractor-arbitrary-variants@0.56.5':
     resolution: {integrity: sha512-p2pyzz/ONvc5CGcaB9OZvWE8qkRSgyuhaQqFQLdBFeUhveHC0CGP0iSnXwBgAFHWM7DJo4/JpWeZ+mBt0ogVLA==}
 
@@ -1630,6 +1648,9 @@ packages:
 
   '@unocss/preset-icons@0.58.9':
     resolution: {integrity: sha512-9dS48+yAunsbS0ylOW2Wisozwpn3nGY1CqTiidkUnrMnrZK3al579A7srUX9NyPWWDjprO7eU/JkWbdDQSmFFA==}
+
+  '@unocss/preset-legacy-compat@0.59.4':
+    resolution: {integrity: sha512-vUggTaG8qXNzaLn5tGzQ+7VzYTjH3sjaN+wVV5I9XojgoiBGmyuyw0xuSVBmiQmxvdGV3KPUBZ5td///hprW8w==}
 
   '@unocss/preset-mini@0.56.5':
     resolution: {integrity: sha512-/KhlThhs1ilauM7MwRSpahLbIPZ5VGeGvaUsU8+ZlNT3sis4yoVYkPtR14tL2IT6jhOU05N/uu3aBj+1bP8GjQ==}
@@ -2001,9 +2022,6 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  caniuse-lite@1.0.30001597:
-    resolution: {integrity: sha512-7LjJvmQU6Sj7bL0j5b5WY/3n7utXUJvAe1lxhsHDbLmwX9mdL86Yjtr+5SRCyf8qME4M7pU2hswj0FpyBVCv9w==}
-
   caniuse-lite@1.0.30001616:
     resolution: {integrity: sha512-RHVYKov7IcdNjVHJFNY/78RdG4oGVjbayxv8u5IO74Wv7Hlq4PnJE6mo/OjFijjVFNy5ijnCt6H3IIo4t+wfEw==}
 
@@ -2105,9 +2123,6 @@ packages:
 
   confbox@0.1.3:
     resolution: {integrity: sha512-eH3ZxAihl1PhKfpr4VfEN6/vUd87fmgb6JkldHgg/YR6aEBhW63qUDgzP2Y6WM0UumdsYp5H3kibalXAdHfbgg==}
-
-  confusing-browser-globals@1.0.11:
-    resolution: {integrity: sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==}
 
   consola@3.2.3:
     resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
@@ -2376,13 +2391,6 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-airbnb-base@15.0.0:
-    resolution: {integrity: sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==}
-    engines: {node: ^10.12.0 || >=12.0.0}
-    peerDependencies:
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.2
-
   eslint-config-flat-gitignore@0.1.3:
     resolution: {integrity: sha512-oQD+dEZv3RThN60tFqGFt+NJcO1DmssUcP+T/nlX+ZzEoEvVUYH0GU9X/VlmDXsbMsS9mONI1HrlxLgtKojw7w==}
 
@@ -2392,8 +2400,14 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-config-vue-global-api@0.4.1:
-    resolution: {integrity: sha512-mJTiKBGLe1FXmEifYzCQzUTBpFv8OtfYzP6PAOuVRf+3hkGLMeiDh4bVzZEaJfdExtc8mPw9vp35YSLhwTselQ==}
+  eslint-config-standard@17.1.0:
+    resolution: {integrity: sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: ^8.0.1
+      eslint-plugin-import: ^2.25.2
+      eslint-plugin-n: '^15.0.0 || ^16.0.0 '
+      eslint-plugin-promise: ^6.0.0
 
   eslint-import-resolver-node@0.3.9:
     resolution: {integrity: sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==}
@@ -2500,6 +2514,12 @@ packages:
         optional: true
       eslint-config-prettier:
         optional: true
+
+  eslint-plugin-promise@6.1.1:
+    resolution: {integrity: sha512-tjqWDwVZQo7UIPMeDReOpUgHCmCiH+ePnVT+5zVapL0uuHnegBUs2smM13CzOs2Xb5+MHMRFTs9v24yjba4Oig==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^7.0.0 || ^8.0.0
 
   eslint-plugin-sort-keys@2.3.5:
     resolution: {integrity: sha512-2j/XKQ9sNJwK8kIp/U0EvuF6stS6/8aIc53/NskE4C5NRNh4dt3xzbZyOdrVC11cTH6Zo59/pdzA0Kb+2fQGWg==}
@@ -3454,10 +3474,6 @@ packages:
     resolution: {integrity: sha512-byy+U7gp+FVwmyzKPYhW2h5l3crpmGsxl7X2s8y43IgxvG4g3QZ6CffDtsNQy1WsmZpQbO+ybo0AlW7TY6DcBQ==}
     engines: {node: '>= 0.4'}
 
-  object.entries@1.1.7:
-    resolution: {integrity: sha512-jCBs/0plmPsOnrKAfFQXRG2NFjlhZgjjcBLSmTnEhU8U6vVTsVe8ANeQJCHTl3gSsI4J+0emOoCgoKlmQPMgmA==}
-    engines: {node: '>= 0.4'}
-
   object.fromentries@2.0.7:
     resolution: {integrity: sha512-UPbPHML6sL8PI/mOqPwsH4G6iyXcCGzLin8KvEPenOZN5lpCNBZZQ+V62vdjB1mQHrmqGQt5/OJzemUA+KJmEA==}
     engines: {node: '>= 0.4'}
@@ -3739,6 +3755,10 @@ packages:
 
   qs@6.11.0:
     resolution: {integrity: sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==}
+    engines: {node: '>=0.6'}
+
+  qs@6.5.3:
+    resolution: {integrity: sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==}
     engines: {node: '>=0.6'}
 
   queue-microtask@1.2.3:
@@ -4074,26 +4094,17 @@ packages:
     peerDependencies:
       stylelint: ^16.0.0
 
-  stylelint-config-standard-scss@13.1.0:
-    resolution: {integrity: sha512-Eo5w7/XvwGHWkeGLtdm2FZLOMYoZl1omP2/jgFCXyl2x5yNz7/8vv4Tj6slHvMSSUNTaGoam/GAZ0ZhukvalfA==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
-      stylelint: ^16.3.1
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-
-  stylelint-config-standard@36.0.0:
-    resolution: {integrity: sha512-3Kjyq4d62bYFp/Aq8PMKDwlgUyPU4nacXsjDLWJdNPRUgpuxALu1KnlAHIj36cdtxViVhXexZij65yM0uNIHug==}
-    engines: {node: '>=18.12.0'}
-    peerDependencies:
-      stylelint: ^16.1.0
-
   stylelint-order@6.0.4:
     resolution: {integrity: sha512-0UuKo4+s1hgQ/uAxlYU4h0o0HS4NiQDud0NAUNI0aa8FJdmYHA5ZZTFHiV5FpmE3071e9pZx5j0QpVJW5zOCUA==}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0 || ^16.0.1
+
+  stylelint-prettier@5.0.0:
+    resolution: {integrity: sha512-RHfSlRJIsaVg5Br94gZVdWlz/rBTyQzZflNE6dXvSxt/GthWMY3gEHsWZEBaVGg7GM+XrtVSp4RznFlB7i0oyw==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      prettier: '>=3.0.0'
+      stylelint: '>=16.0.0'
 
   stylelint-scss@6.2.1:
     resolution: {integrity: sha512-ZoGLbVb1keZYRVGQlhB8G6sZOoNqw61whzzzGFWp05N12ErqLFfBv3JPrXiMLZaW98sBS7K/vUQhRnvUj4vwdw==}
@@ -4312,6 +4323,18 @@ packages:
       '@vueuse/core':
         optional: true
 
+  unplugin-auto-import@0.17.5:
+    resolution: {integrity: sha512-fHNDkDSxv3PGagX1wmKBYBkgaM4AKAgZmdJw/bxjhNljx9KSXSgHpGfX0MwUrq9qw6q1bhHIZVWyOwoY2koo4w==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@nuxt/kit': ^3.2.2
+      '@vueuse/core': '*'
+    peerDependenciesMeta:
+      '@nuxt/kit':
+        optional: true
+      '@vueuse/core':
+        optional: true
+
   unplugin@1.10.0:
     resolution: {integrity: sha512-CuZtvvO8ua2Wl+9q2jEaqH6m3DoQ38N7pvBYQbbaeNlWGvK2l6GHiKi29aIHDPoSxdUzQ7Unevf1/ugil5X6Pg==}
     engines: {node: '>=14.0.0'}
@@ -4388,9 +4411,6 @@ packages:
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
-
-  vue-global-api@0.4.1:
-    resolution: {integrity: sha512-283vpYOhVHJCpMkjNVEwZdgaAb+Y93zFaXGAWTI378MLoNuwQydjD/BAy1e81QYEmyA+JbxqcmMZVWcM9rbriw==}
 
   vue@3.4.21:
     resolution: {integrity: sha512-5hjyV/jLEIKD/jYl4cavMcnzKwjMKohureP8ejn3hhEjwhWIhWeuzL2kJAjzl/WyVsgPY56Sy4Z40C3lVshxXA==}
@@ -6356,6 +6376,8 @@ snapshots:
 
   '@unocss/core@0.58.9': {}
 
+  '@unocss/core@0.59.4': {}
+
   '@unocss/extractor-arbitrary-variants@0.56.5':
     dependencies:
       '@unocss/core': 0.56.5
@@ -6392,6 +6414,10 @@ snapshots:
       ofetch: 1.3.4
     transitivePeerDependencies:
       - supports-color
+
+  '@unocss/preset-legacy-compat@0.59.4':
+    dependencies:
+      '@unocss/core': 0.59.4
 
   '@unocss/preset-mini@0.56.5':
     dependencies:
@@ -6454,7 +6480,7 @@ snapshots:
   '@unocss/rule-utils@0.58.9':
     dependencies:
       '@unocss/core': 0.58.9
-      magic-string: 0.30.8
+      magic-string: 0.30.10
 
   '@unocss/scope@0.58.9': {}
 
@@ -6880,7 +6906,7 @@ snapshots:
 
   browserslist@4.23.0:
     dependencies:
-      caniuse-lite: 1.0.30001597
+      caniuse-lite: 1.0.30001616
       electron-to-chromium: 1.4.707
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -6925,8 +6951,6 @@ snapshots:
   callsites@3.1.0: {}
 
   camelcase@6.3.0: {}
-
-  caniuse-lite@1.0.30001597: {}
 
   caniuse-lite@1.0.30001616: {}
 
@@ -7028,8 +7052,6 @@ snapshots:
   concat-map@0.0.1: {}
 
   confbox@0.1.3: {}
-
-  confusing-browser-globals@1.0.11: {}
 
   consola@3.2.3: {}
 
@@ -7313,15 +7335,6 @@ snapshots:
       eslint: 8.57.0
       semver: 7.6.0
 
-  eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))(eslint@8.57.0):
-    dependencies:
-      confusing-browser-globals: 1.0.11
-      eslint: 8.57.0
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
-      object.assign: 4.1.5
-      object.entries: 1.1.7
-      semver: 6.3.1
-
   eslint-config-flat-gitignore@0.1.3:
     dependencies:
       find-up: 7.0.0
@@ -7331,7 +7344,12 @@ snapshots:
     dependencies:
       eslint: 8.57.0
 
-  eslint-config-vue-global-api@0.4.1: {}
+  eslint-config-standard@17.1.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))(eslint-plugin-n@16.6.2(eslint@8.57.0))(eslint-plugin-promise@6.1.1(eslint@8.57.0))(eslint@8.57.0):
+    dependencies:
+      eslint: 8.57.0
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.8.0(eslint@8.57.0)(typescript@5.4.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
+      eslint-plugin-n: 16.6.2(eslint@8.57.0)
+      eslint-plugin-promise: 6.1.1(eslint@8.57.0)
 
   eslint-import-resolver-node@0.3.9:
     dependencies:
@@ -7509,6 +7527,10 @@ snapshots:
       synckit: 0.8.8
     optionalDependencies:
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
+
+  eslint-plugin-promise@6.1.1(eslint@8.57.0):
+    dependencies:
+      eslint: 8.57.0
 
   eslint-plugin-sort-keys@2.3.5:
     dependencies:
@@ -8490,12 +8512,6 @@ snapshots:
       has-symbols: 1.0.3
       object-keys: 1.1.1
 
-  object.entries@1.1.7:
-    dependencies:
-      call-bind: 1.0.7
-      define-properties: 1.2.1
-      es-abstract: 1.22.5
-
   object.fromentries@2.0.7:
     dependencies:
       call-bind: 1.0.7
@@ -8758,6 +8774,8 @@ snapshots:
   qs@6.11.0:
     dependencies:
       side-channel: 1.0.6
+
+  qs@6.5.3: {}
 
   queue-microtask@1.2.3: {}
 
@@ -9134,23 +9152,16 @@ snapshots:
     dependencies:
       stylelint: 16.5.0(typescript@5.4.2)
 
-  stylelint-config-standard-scss@13.1.0(postcss@8.4.38)(stylelint@16.5.0(typescript@5.4.2)):
-    dependencies:
-      stylelint: 16.5.0(typescript@5.4.2)
-      stylelint-config-recommended-scss: 14.0.0(postcss@8.4.38)(stylelint@16.5.0(typescript@5.4.2))
-      stylelint-config-standard: 36.0.0(stylelint@16.5.0(typescript@5.4.2))
-    optionalDependencies:
-      postcss: 8.4.38
-
-  stylelint-config-standard@36.0.0(stylelint@16.5.0(typescript@5.4.2)):
-    dependencies:
-      stylelint: 16.5.0(typescript@5.4.2)
-      stylelint-config-recommended: 14.0.0(stylelint@16.5.0(typescript@5.4.2))
-
   stylelint-order@6.0.4(stylelint@16.5.0(typescript@5.4.2)):
     dependencies:
       postcss: 8.4.38
       postcss-sorting: 8.0.2(postcss@8.4.38)
+      stylelint: 16.5.0(typescript@5.4.2)
+
+  stylelint-prettier@5.0.0(prettier@3.2.5)(stylelint@16.5.0(typescript@5.4.2)):
+    dependencies:
+      prettier: 3.2.5
+      prettier-linter-helpers: 1.0.0
       stylelint: 16.5.0(typescript@5.4.2)
 
   stylelint-scss@6.2.1(stylelint@16.5.0(typescript@5.4.2)):
@@ -9450,6 +9461,19 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
+  unplugin-auto-import@0.17.5(rollup@4.17.2):
+    dependencies:
+      '@antfu/utils': 0.7.7
+      '@rollup/pluginutils': 5.1.0(rollup@4.17.2)
+      fast-glob: 3.3.2
+      local-pkg: 0.5.0
+      magic-string: 0.30.10
+      minimatch: 9.0.4
+      unimport: 3.7.1(rollup@4.17.2)
+      unplugin: 1.10.0
+    transitivePeerDependencies:
+      - rollup
+
   unplugin@1.10.0:
     dependencies:
       acorn: 8.11.3
@@ -9510,14 +9534,6 @@ snapshots:
       semver: 7.6.0
     transitivePeerDependencies:
       - supports-color
-
-  vue-global-api@0.4.1(vue@3.4.21(typescript@5.4.2)):
-    dependencies:
-      eslint-config-vue-global-api: 0.4.1
-      vue-demi: 0.14.7(vue@3.4.21(typescript@5.4.2))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
 
   vue@3.4.21(typescript@5.4.2):
     dependencies:

@@ -32,7 +32,7 @@
       "eslint --fix"
     ],
     "**/*.{vue,css,scss,html}": [
-      "stylelint --fix --allow-empty-input"
+      "stylelint --fix"
     ]
   },
   "resolutions": {
@@ -42,6 +42,7 @@
     "dayjs": "^1.11.11",
     "pinia": "2.0.36",
     "pinia-plugin-persistedstate": "^3.2.1",
+    "qs": "6.5.3",
     "vue": "3.4.21",
     "wot-design-uni": "^1.2.19"
   },
@@ -61,11 +62,13 @@
     "@uni-helper/vite-plugin-uni-manifest": "^0.2.4",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.18",
     "@uni-helper/vite-plugin-uni-platform": "^0.0.4",
+    "@unocss/preset-legacy-compat": "^0.59.1",
     "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.16",
     "commitlint": "^19.3.0",
     "eslint": "^8.57.0",
-    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
@@ -79,14 +82,16 @@
     "stylelint": "^16.5.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
     "stylelint-config-recommended-vue": "^1.5.0",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-prettier": "^5.0.0",
+    "terser": "^5.26.0",
     "unocss": "^0.58.9",
     "unocss-applet": "^0.7.8",
+    "unplugin-auto-import": "^0.17.2",
     "vite": "5.2.8",
     "esbuild": "0.20.1",
-    "vite-plugin-restart": "^0.4.0",
-    "vue-global-api": "^0.4.1"
+    "vite-plugin-restart": "^0.4.0"
   }
 }
