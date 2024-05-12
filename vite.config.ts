@@ -5,7 +5,7 @@ import Uni from '@dcloudio/vite-plugin-uni'
 // @see https://uni-helper.js.org/vite-plugin-uni-pages
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 // @see https://uni-helper.js.org/vite-plugin-uni-layouts
-// import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 // @see https://github.com/uni-helper/vite-plugin-uni-platform
 // 需要与 @uni-helper/vite-plugin-uni-pages 插件一起使用
 // import UniPlatform from '@uni-helper/vite-plugin-uni-platform'
@@ -46,7 +46,11 @@ export default ({ command, mode }) => {
         exclude: ['**/components/**/**.*'],
         routeBlockLang: 'json5', // 虽然设了默认值，但是vue文件还是要加上 lang="json5", 这样才能很好地格式化
       }),
-      // UniLayouts(),
+      UniLayouts({
+        layoutDir: 'layouts',
+        layout: '',
+        cwd: VITE_ROOT_DIR,
+      }),
       // UniPlatform(),
       UniManifest(),
       // UniXXX 需要在 Uni 之前引入

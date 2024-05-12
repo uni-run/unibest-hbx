@@ -15,6 +15,7 @@ export default defineUniPages({
     autoscan: true,
     custom: {
       '^wd-(.*)': 'wot-design-uni/components/wd-$1/wd-$1.vue',
+      '^layout-(.*)-uni': '@/layouts/$1.vue',
     },
   },
   tabBar: {
