@@ -35,6 +35,7 @@ export default ({ command, mode }) => {
   console.log('UNI_PLATFORM -> ', UNI_PLATFORM) // 得到 mp-weixin, h5, app 等
 
   return defineConfig({
+    // root: VITE_ROOT_DIR,
     envDir: './env', // 自定义env目录
     plugins: [
       UniPages({
@@ -42,7 +43,7 @@ export default ({ command, mode }) => {
         homePage: 'pages/index/index', // 设置默认路由入口
         dir: 'pages', // 主目录
         subPackages: ['pages-sub'], // 子目录，是个数组，可以配置多个，但是不能为pages里面的目录
-        outDir: '',
+        outDir: './',
         exclude: ['**/components/**/**.*'],
         routeBlockLang: 'json5', // 虽然设了默认值，但是vue文件还是要加上 lang="json5", 这样才能很好地格式化
       }),
