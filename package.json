@@ -58,7 +58,7 @@
     "@typescript-eslint/parser": "^7.9.0",
     "@uni-helper/uni-app-types": "^0.5.13",
     "@uni-helper/uni-ui-types": "^0.5.14",
-    "@uni-helper/vite-plugin-uni-layouts": "^0.1.7",
+    "@uni-helper/vite-plugin-uni-layouts": "^0.1.8",
     "@uni-helper/vite-plugin-uni-manifest": "^0.2.6",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.20",
     "@uni-helper/vite-plugin-uni-platform": "^0.0.4",
